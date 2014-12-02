@@ -23,8 +23,8 @@
 
 import UIKit
 
-let rangeATest: NSRange = NSMakeRange(0, 20)
-let rangeBTest: NSRange = NSMakeRange(5, 10)
+let rangeATest: NSRange = NSMakeRange(0, 21)
+let rangeBTest: NSRange = NSMakeRange(15, 25)
 
 /*
 *
@@ -52,11 +52,30 @@ func detectIntersectionBetween(rangeA: NSRange, rangeB: NSRange) -> Bool
     {
         if rangeB.location == i
         {
-            for j in rangeB.location..<rangeB.length + 1
+            let lengthATillEnd = rangeA.length - rangeB.location
+            let lengthBTillEnd = rangeB.length - rangeB.location
+            
+            var count: Int = 0
+            
+            if lengthBTillEnd <= lengthATillEnd
             {
-                // Output all intersections
-                println(j)
+                for j in rangeB.location..<rangeB.length + 1
+                {
+                    // Output all intersections location
+                    ++count
+                    println(j)
+                }
+            } else {
+                for k in rangeB.location..<rangeA.length
+                {
+                    // Output all intersections location
+                    ++count
+                    println(k)
+                }
             }
+            
+            // Output count
+            println(count)
             
             return true
         }else{
