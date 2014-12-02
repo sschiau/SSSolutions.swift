@@ -60,7 +60,7 @@ func detectIntersectionBetween(rangeA: NSRange, rangeB: NSRange) -> Bool
             
             return true
         }else{
-            println("No interesction at location \(i)")
+            println("No intersection at location \(i)")
         }
     }
     
