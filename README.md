@@ -4,7 +4,7 @@ Swift solutions to diverse problems. **Playground** implementation.
 
 ***
 
-**SSSolutions-Swift-NSRangesIntersect.playground**  
+**[SSSolutions-Swift-NSRangesIntersect.playground](https://github.com/sschiau/SSSolutions-Swift/blob/master/SSSolutions-Swift-NSRangesIntersect.playground/section-1.swift)**  
 Apple method and Manual method to determine whether two NSRanges intersect
 
 ***
