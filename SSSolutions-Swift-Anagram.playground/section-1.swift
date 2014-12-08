@@ -69,7 +69,7 @@ func isAnagram(word: String, string: String) -> Bool
 
 /*
 *
-* Method ((n log n ) * 2) + n
+* Method ((n log n ) * 2) + (2 * n)
 *
 */
 func isAnagramWithSort(word: String, string: String) -> Bool
